@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- *** META *** -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Description de votre page">
+        <meta name="keywords" content="Mot-clé1, Mot-clé2, Mot-clé3">
+        <meta name="author" content="Aerts Anaïs">
+        <!-- *** TITLE *** -->
+        <title>UJN ELLE TV</title>
+        <!-- *** ICONS *** -->
+        <link rel="apple-touch-icon" sizes="180x180" href="">
+        <link rel="icon" type="image/png" sizes="180x180" href="">
+        <link rel="icon" type="image/png" sizes="32x32" href="">
+        <link rel="icon" type="image/png" sizes="16x16" href="">
+        <!-- *** LINKS *** -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css">
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+
+        <!-- *** MENU *** -->
+        <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+            <div
+                class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a
+                    href="https://flowbite.com/"
+                    class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="images/logos/Logo B.png" class="h-8" alt="Flowbite Logo">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap "></span>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button
+                        type="button"
+                        class="text-white bg-[#ffb300] hover:bg-[#ff8427] focus:ring-4 focus:outline-none focus:ring-[#ff8427] font-medium rounded-lg text-sm px-4 py-2 text-center">Contact</button>
+                    <button
+                        data-collapse-toggle="navbar-sticky"
+                        type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-sticky"
+                        aria-expanded="false">
+                        <span class="sr-only">Ouvrir le menu</span>
+                        <svg
+                            class="w-5 h-5"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewbox="0 0 17 14">
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                </div>
+                <div
+                    class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                    id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                        <li>
+                            <a
+                                href="#accueil"
+                                class="block py-2 px-3 text-white bg-[#ffb300] rounded md:bg-transparent md:text-[#ffb300] md:hover:text-[#ff8427] md:p-0"
+                                aria-current="page">Accueil</a>
+                        </li>
+                        <li>
+                            <a
+                                href="#apropos"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#ff8427] md:p-0">A propos de nous
+                            </a>
+                        </li>
+                        <li>
+                            <button
+                                id="dropdownNavbarLink"
+                                data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ff8427] md:p-0 md:w-auto">Concept<svg
+                                class="w-2.5 h-2.5 ms-2.5"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewbox="0 0 10 6">
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m1 1 4 4 4-4"/>
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div
+                                id="dropdownNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ff8427]">Les émissions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ff8427]">Formations</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ff8427]">Thèmes divers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- *** ACCUEIL *** -->
+        <div id="accueil" class="w-full h-[900px]">
+            <div id="shadow"></div>
+            <div class="w-full h-full flex justify-center items-center">
+                <div class="container h-full flex flex-col justify-center items-center">
+                    <div class="h-2/3 md:w-full w-[90%] flex flex-col justify-center items-center">
+                        <h1 class="text-[#ffb300] font-black text-[60px] text-center drop-shadow-lg">UJN Elle TV</h1>
+                        <br>
+                        <h2 class="text-[#ffb300] font-bold text-xl text-center drop-shadow-lg">Une
+                            chaine de télévision virtuelle par les femmes, pour les femmes, et avec les
+                            femmes</h2>
+                    </div>
+                    <div class="h-1/3 md:w-full w-[90%] flex flex-col justify-center items-center">
+                        <h3 class="text-white text-lg text-center drop-shadow-lg">Aider chaque femme à découvrir, développer et déployer son potentiel.
+                            <br>
+                            Voir un monde prospère et paisible où chaque femme fait partie de la solution.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- *** A PROPOS *** -->
+        <div id="apropos" class="w-full pt-[50px] mb-[180px]">
+            <div class="w-full h-[100px] ">
+                <h1 class="text-[#ad053d] font-bold md:text-[40px] text-[25px] text-center">Pourquoi existe UJN Elle TV ?</h1>
+            </div>
+            <div class="w-full h-[900px]">
+                <div class="w-full h-1/2 relative">
+                    <div class="md:h-[200px] md:w-[350px] ">
+                        <img class="object-cover w-full h-full rounded-lg" src="images/photos/_MG_9057.jpg" alt="">
+                    </div>
+                    <div
+                        class="absolute top-44 left-1/2 transform -translate-x-1/2 bg-white border border-4 border-[#ffb300] box-border w-[90%] p-[15px]">
+                        <h3 class="text-lg font-medium text-[#ffb300]">UJN Elle TV est né d'un constat :</h3>
+                        <p>Les femmes ont
+                            <span class="text-[#ad053d] font-medium">beaucoup</span>
+                            de choses à dire mais
+                            <span class="text-[#ad053d] font-medium">peu</span>
+                            d'endroits où s'exprimer</p>
+                        <br>
+                        <h3 class="text-lg font-medium text-[#ffb300]">Qui sommes nous ?</h3>
+                        <p>Un groupe de femmes (et d'hommes) de tout âges, milieux et métiers, réuni(e)s
+                            autour d'un même projet : UJN Elle TV.</p>
+                    </div>
+                </div>
+                <div class="w-full h-1/2 relative">
+                    <div class="md:h-[200px] md:w-[350px] ">
+                        <img class="object-cover w-full h-full rounded-lg" src="images/photos/_MG_9056.jpg" alt="">
+                    </div>
+                    <div
+                        class="absolute top-44 left-1/2 transform -translate-x-1/2 bg-white border border-4 border-[#ffb300] box-border w-[90%] p-[15px]">
+                        <h3 class="text-lg font-medium text-[#ffb300]">QUID DES HOMMES ?</h3>
+                        <p>La chaine UJN ELLE TV n’a aucunement pour but d’exclure les hommes UJN ELLE TV a simplement pour but de mettre en avant les femmes, dont la parole dans les médias a souvent été inaudible, mais a aussi pour but d’informer les hommes sur les thématiques féminines, notamment grâce à la masculinité positive, afin de faciliter et assainir les relations entre les hommes et les femmes.</p>
+                        <p>Les hommes sont les bienvenus sur la chaine, devant ou derrière la caméra, afin de partager leurs connaissances et leur sagesse sur les sujets abordés.</p>
+                        <p class="text-[#ad053d] font-medium">Nous remercions tout les hommes participant à l’essor de la chaine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- *** ACTUS *** -->
+
+        <div id="actus" class="bg-[#ad053d] w-full pt-[50px]">
+            <div class="w-full h-[100px] ">
+                <h1 class="text-white font-bold md:text-[40px] text-[25px] text-center">Nos actualités</h1>
+            </div>     
+            <div class="flex items-center justify-center w-full h-full py-2 sm:py-8 px-4">
+                <div class="w-full relative flex items-center justify-center">
+                    <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none cursor-pointer" id="prev">
+                        <svg class="text-white drop-shadow-lg" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                        <div id="slider" class="h-[400px] flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                            <div class="flex flex-shrink-0 relative w-full max-w-[600px] max-h-[350px] sm:w-auto">
+                                <img src="images/images/a-venir-1024x595.jpg" alt="black chair and white table" class="object-cover object-center w-full rounded-lg" />
+                                <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="flex">
+                                        <h2 class="w-1/2 drop-shadow-lg lg:text-xl leading-4 text-base lg:leading-5 text-white">12/01/2024</h2>
+                                        <h2 class="w-1/2 drop-shadow-lg lg:text-xl leading-4 text-right lg:leading-5 text-white font-medium">Nom de l'auteur</h2>
+                                    </div>
+                                    <div class="flex h-full items-end pb-6">
+                                        <h3 class="drop-shadow-lg text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Parlons entrepreneuriat</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-shrink-0 relative w-full max-w-[600px] max-h-[350px] sm:w-auto rounded-lg">
+                                <img src="images/images/a-venir-1024x595.jpg" alt="black chair and white table" class="object-cover object-center w-full rounded-lg" />
+                                <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="flex">
+                                        <h2 class="w-1/2 drop-shadow-lg lg:text-xl leading-4 text-base lg:leading-5 text-white">12/01/2024</h2>
+                                        <h2 class="w-1/2 drop-shadow-lg lg:text-xl leading-4 text-right lg:leading-5 text-white font-medium">Nom de l'auteur</h2>
+                                    </div>
+                                    <div class="flex h-full items-end pb-6">
+                                        <h3 class="drop-shadow-lg text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Parlons entrepreneuriat</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ajoutez les autres éléments de carrousel avec les classes Tailwind appropriées -->
+                        </div>
+                    </div>
+                    <button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none cursor-pointer" id="next">
+                        <svg class="text-white drop-shadow-lg" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+          
+        <!-- *** CONCEPTS -->
+        <div id="concept" class="w-full pt-[50px]">
+            <div class="w-full h-[100px] ">
+                <h1 class="text-[#ad053d] font-bold md:text-[40px] text-[25px] text-center">Envie d'en savoir plus sur nous ?</h1>
+                <h1 class="text-[#ad053d] font-bold md:text-[40px] text-[25px] text-center">Découvrez tout nos concepts</h1>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="images/images/a-venir-1024x595.jpg" alt="">
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <!-- *** PARTENAIRES -->
+        <div id="concept" class="w-full pt-[50px]">
+            <div class="w-full h-[100px] ">
+                <h1 class="text-[#ad053d] font-bold md:text-[40px] text-[25px] text-center">Nos partenaires</h1>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex justify-center items-center">
+                    <img class="h-[130px] max-w-full rounded-lg object-contain" src="images/images/1686048904951.jpeg" alt="">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img class="h-[130px] max-w-full rounded-lg object-contain" src="images/images/5X0KHOST_400x400.jpg" alt="">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img class="h-[130px] max-w-full rounded-lg object-contain" src="images/images/cropped-cropped-MNK-LOGO.png" alt="">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img class="h-[130px] max-w-full rounded-lg object-contain" src="images/images/IF_Logo_Sans_Bleu_RVB.png" alt="">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img class="h-[130px] max-w-full rounded-lg object-contain" src="images/images/UJN_Logo@2x.png" alt="">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img class="h-[130px] max-w-full rounded-lg object-contain" src="images/images/UNDP Logo_6.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- *** FOOTER *** -->
+        <footer>
+            
+        </footer>
+
+        <!-- *** SCRIPTS *** -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
